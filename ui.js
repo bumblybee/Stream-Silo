@@ -22,17 +22,26 @@ class UI {
             <div class="row">
 
               <div class="col-md-6">
-                <img class="img-thumbnail mx-auto d-block rounded photo" src="https://image.tmdb.org/t/p/w300${result.poster_path}" alt="nothing to see here">
+                <img class="img-thumbnail mx-auto d-block rounded photo" src="https://image.tmdb.org/t/p/w300${
+                  result.poster_path
+                }" alt="nothing to see here">
               </div>
 
               <div class="col-md-6">
-                  <h1 class="name text-black mr-4" id="trending-title">${result.title}</h1>
-                  <p class="release-date">(${result.release_date})</p>
+                  <h1 class="name text-black mr-4" id="trending-title">${
+                    result.title
+                  }</h1>
+                  <p class="release-date">(${result.release_date.substring(
+                    0,
+                    4
+                  )})</p>
                   
                   <br />
                   <p class="trending-synopsis mx-auto" >${result.overview}</p>
                   <br />
-                  <p class="average-rating text-dark"><strong>Average Rating:</strong> ${result.vote_average}</p>
+                  <p class="average-rating text-dark"><strong>Average Rating:</strong> ${
+                    result.vote_average
+                  }</p>
                 
               </div>
             </div>
