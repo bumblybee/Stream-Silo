@@ -1,0 +1,9 @@
+{
+  "name": "StreamSilo",
+  "short_name": "StreamSilo",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "Search for streaming content.",
+  "theme_color": "#fff"
+}
