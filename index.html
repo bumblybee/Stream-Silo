@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StreamSilo</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/united/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Todo: add links to various lists like imdb top, etc -->
+    <div class="navbar fixed-top bg-info border-0">
+      <div class="container">
+        <h2>
+          <!-- this href is github specific, change if deploy elsewhere -->
+          <a href="https://bumblybee.github.io/Stream-Silo/" class="text-white">
+            <img class="icon" src="img/silo.png" alt="silo" /><span
+              class="brand"
+              >StreamSilo</span
+            >
+          </a>
+        </h2>
+
+        <form class="form-inline ml-md-auto">
+          <input
+            id="search-input"
+            class="form-control"
+            type="search"
+            placeholder="Search streams..."
+            aria-label="Search"
+          />
+          <button id="search-btn" class="search-btn btn my-2" type="button">
+            Search
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="results" class="container results">
+        <div class="text-center">
+          <div class="spinner-grow text-info" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <h3 class="text-info">Loading...</h3>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal" class="modal-div">
+      <div id="modal-content">
+        <span id="close" class="btn text-info">&times;</span>
+
+        <div id="modal-body">
+          <!-- create ul and lis in JS -->
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="config.js"></script>
+    <script src="api.js"></script>
+    <script src="ui.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
